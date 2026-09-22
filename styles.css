@@ -838,17 +838,20 @@ body.theme-dark .modal-close:focus-visible{outline-color:#fff;}
     transition-duration:.01ms !important;
   }
 }
-.logo {
-  width: 180px;
-  height: auto;
-  display: block;
+.logo,
+.hero-logo {
   object-fit: contain;
-
-  /* Claro = rojo original */
   filter: none;
 }
 
-/* Oscuro = logo blanco */
-body.theme-dark .logo {
-  filter: brightness(0) invert(1);
+/* Logo principal */
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+/* Logo grande */
+.hero-logo {
+  width: 300px;
+  height: auto;
 }
